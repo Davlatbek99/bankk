@@ -1,0 +1,150 @@
+.section1_bigbox {
+    .section1_box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        .section1_box_title {
+
+            h1 {
+                width: 510px;
+                height: 73px;
+                font-size: 60px;
+                font-weight: 700;
+                line-height: 73.14px;
+                color: rgba(25, 66, 223, 1);
+                margin-top: 120px;
+                margin-bottom: 60px;
+            }
+
+            p {
+                width: 470px;
+                font-size: 19px;
+                font-weight: 500;
+                line-height: 23.16px;
+                color: rgba(35, 31, 32, 1);
+                margin-bottom: 79px;
+            }
+
+            .btn1 {
+                &:hover {
+                    background-color: rgba(255, 90, 58, 0.8);
+                    box-shadow: -3px 4px 7px 0px rgba(255, 90, 58, 0.6);
+                    transition: all ease 0.1s;
+                }
+
+                &:active {
+                    background-color: rgba(255, 90, 58, 1);
+                    box-shadow: -3px 4px 7px 0px rgba(255, 90, 58, 0.4);
+                    transition: all ease 0.1s;
+                }
+
+                transition: all ease 0.1s;
+                width: 215px;
+                height: 55px;
+                border-radius: 50px;
+                background-color: rgba(255, 90, 58, 1);
+                border: none;
+                box-shadow: -3px 4px 7px 0px rgba(255, 90, 58, 0.4);
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24.38px;
+                color: rgba(255, 255, 255, 1);
+                margin-bottom: 200px;
+            }
+        }
+
+        .section1_box_img {
+            width: 550px;
+            height: 600px;
+            object-fit: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 780px;
+                height: 780px;
+            }
+        }
+
+        .btn2 {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .section1_bigbox {
+        .section1_box {
+            height: 620px;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
+
+            .section1_box_title {
+                width: 100%;
+
+                h1 {
+                    width: 255px;
+                    height: 37px;
+                    font-size: 30px;
+                    line-height: 36.57px;
+                    margin-top: 30px;
+                    margin-bottom: 40px;
+                }
+
+                p {
+                    width: 310px;
+                    height: 60px;
+                    font-size: 16px;
+                    line-height: 19.5px;
+                    margin: 0;
+                }
+
+                .btn1 {
+                    display: none;
+                }
+            }
+
+            .section1_box_img {
+                width: 100%;
+
+                img {
+                    width: 392px;
+                    height: 392px;
+                }
+            }
+
+            .btn2 {
+
+                &:hover {
+                    background-color: rgba(255, 90, 58, 0.8);
+                    box-shadow: -3px 4px 7px 0px rgba(255, 90, 58, 0.6);
+                    transition: all ease 0.1s;
+                }
+
+                &:active {
+                    background-color: rgba(255, 90, 58, 1);
+                    box-shadow: -3px 4px 7px 0px rgba(255, 90, 58, 0.4);
+                    transition: all ease 0.1s;
+                }
+
+                display: block;
+                transition: all ease 0.1s;
+                width: 215px;
+                height: 70px;
+                border-radius: 50px;
+                background-color: rgba(255, 90, 58, 1);
+                border: none;
+                box-shadow: -3px 4px 7px 0px rgba(255, 90, 58, 0.4);
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24.38px;
+                color: rgba(255, 255, 255, 1);
+                
+            }
+        }
+    }
+}
